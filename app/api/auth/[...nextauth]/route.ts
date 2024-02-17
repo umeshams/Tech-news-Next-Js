@@ -1,4 +1,4 @@
-import nextAuth, { AuthOptions } from "next-auth";
+import nextAuth, { AuthOptions } from "next-auth/";
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
@@ -24,4 +24,5 @@ export const authOptions: AuthOptions = {
 };
 
 const handler = nextAuth(authOptions);
-export { handler as GET, handler as POST };
+// export { handler as GET, handler as POST };
+export default handler;
