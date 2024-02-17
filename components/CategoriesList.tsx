@@ -20,7 +20,7 @@ export default async function CategoriesList() {
     <div className="flex gap-2 flex-wrap">
       {categories &&
         categories.map((category) => (
-          <Link
+          <Link key={category.id}
             className="px-4 py-1 rounded-md bg-slate-800 text-white cursor-pointer"
             href={`/categories/${category.catName}`}
           >

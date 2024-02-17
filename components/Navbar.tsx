@@ -35,7 +35,7 @@ export default function Navbar() {
           </h1>
         </Link>
         <p>
-          Exploring Tomorrow's Innovations <br /> One Byte at a Time
+          Exploring Tomorrow&apos;s Innovations <br /> One Byte at a Time
         </p>
       </div>
       {status === "authenticated" ? (
